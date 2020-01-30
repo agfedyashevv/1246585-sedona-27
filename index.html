@@ -19,7 +19,7 @@
 
     <main>
       <section>
-        <h2>Приветствие</h2>
+        <h2 class="visually-hidden">Приветствие</h2>
 
         <div><!-- Фоновая картинка гор в div через background-image -->
           <div>
@@ -37,7 +37,7 @@
       </section>
 
       <section>
-        <h2>Причина №1</h2>
+        <h2 class="visually-hidden">Причина №1</h2>
         <div>
           <p><strong>Настоящий городок</strong></p>
           <p>— №1 —</p>
@@ -49,7 +49,7 @@
       </section>
 
       <section>
-        <h2>Рекомендации для посетителей</h2>
+        <h2 class="visually-hidden">Рекомендации для посетителей</h2>
           <ul>
             <li>
               <p><strong>Жильё</strong></p>
@@ -67,7 +67,7 @@
       </section>
 
       <section>
-        <h2>Причина №2</h2>
+        <h2 class="visually-hidden">Причина №2</h2>
         <div>
           <img src="img/feature-picture-2.jpg" width="" height="" alt="Мост дьявола в Седоне"/>
         </div>
@@ -79,7 +79,7 @@
       </section>
 
       <section>
-        <h2>Причина №3, №4, №5</h2>
+        <h2 class="visually-hidden">Причина №3, №4, №5</h2>
         <ul>
           <li>
             <p><strong>Небольшая площадь</strong></p>
@@ -100,7 +100,7 @@
       </section>
 
       <section>
-        <h2>Заинтересовались?</h2>
+        <h2 class="visually-hidden">Заинтересовались?</h2>
         <p>
           <strong>Заинтересовались?</strong>
         </p>
@@ -108,10 +108,29 @@
           Укажите предполагаемые даты поездки,<br />и мы покажем вам лучшие предложения гостиниц в седоне
         </p>
         <button type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label for="arrival_date">Дата заезда:</label>
+            <input type="date" name="arrival date" id="arrival_date"/>
+          </p>
+          <p>
+            <label for="date_of_departure">Дата выезда:</label>
+            <input type="date" name="date of departure" id="date_of_departure"/>
+          </p>
+          <p>
+            <label for="adult">Взрослые:</label>
+            <input type="number" name="adult" id="adult" min="0" step="1"/>
+          </p>
+          <p>
+            <label for="children">Дети:</label>
+            <input type="number" name="children" id="children" min="0" step="1"/>
+          </p>
+          <a href="#">Найти</a>
+        </form>
       </section>
 
       <section>
-        <h2>Карта с местоположением Седоны</h2>
+        <h2 class="visually-hidden">Карта с местоположением Седоны</h2>
         <!-- Карта -->
       </section>
     </main>
@@ -130,7 +149,7 @@
       </div>
       <div>
         <p>Website by</p>
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="https://via.placeholder.com/100x50" alt=""/></a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="https://via.placeholder.com/100x50" alt="Логотип Html Academy"/></a>
       </div>
     </footer>
 
