@@ -21,26 +21,56 @@
       <section>
         <!-- background-image - фоновая размытая картинка -->
         <h2 class="visually-hidden">Фильтр отелей</h2>
-        <div>
-          <b>Инфраструктура:</b>
-          Бассейн
-          Парковка
-          Wi-Fi
-        </div>
-        <div>
-          <b>Тип жилья:</b>
-          Гостиница
-          Мотель
-          Апартаменты
-        </div>
-        <div>
-          <p>Стоимость в сутки (Р):</p>
-          <div>
-            <!-- Форма с диапазоном цен -->
-          </div>
-          <button type="button">Показать</button>
-        </div>
-      </section>
+        <form method="get" action="https://echo.htmlacademy.ru" oninput="costsoutput_from.value=cost.value">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="pool" id="filter-pool" checked>
+                <label for="filter-pool">Бассейн</label>
+              </li>
+              <li>
+                <input type="checkbox" name="parking" id="filter-parking">
+                <label for="filter-parking">Парковка</label>
+              </li>
+              <li>
+                <input type="checkbox" name="wifi" id="filter-wifi">
+                <label for="filter-wifi">Wi-Fi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="holel" id="filter-holel" checked>
+                <label for="filter-holel">Гостиница</label>
+              </li>
+              <li>
+                <input type="checkbox" name="motel" id="filter-motel" checked>
+                <label for="filter-motel">Мотель</label>
+              </li>
+              <li>
+                <input type="checkbox" name="apartments" id="filter-apartments" checked>
+                <label for="filter-apartments">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость в сутки (Р):</legend>
+            <div>
+              <ul>
+                <li>От <output name="costsoutput_from"></output></li>
+          <!--  <li>До <output name="costsoutput_to"></output></li> -->
+              </ul>
+            </div>
+            <div>
+              <input type="range" name="cost" id="cost" min="0" max="7000" step="10">
+            </div>
+            <button type="submit">Показать</button>
+          </fieldset>
+        </section>
+      </form>
 
       <section>
         <h2 class="visually-hidden">Сортировка отелей</h2>
@@ -65,26 +95,26 @@
         <h2 class="visually-hidden">Список отелей</h2>
         <ul>
           <li>
-              <article>
-                <div>
-                  <img src="img/hotel-picture-amara.jpg" width="135" height="90" alt="Гостиница Amara Resort & Spa"/>
-                </div>
-                <div>
-                  <h3><a href="#">Amara Resort & SPA</a></h3>
-                  <p>
-                    Гостиница
-                    <a href="#">Подробнее</a>
-                  </p>
-                  <p>
-                    от 4000 р.
-                    <a href="#">Забронировать</a>
-                  </p>
-                  <p>
-                    <!-- background-image. Количество звезд -->
-                    Рейтинг: 8,5
-                  </p>
-                </div>
-              </article>
+            <article>
+              <div>
+                <img src="img/hotel-picture-amara.jpg" width="135" height="90" alt="Гостиница Amara Resort & Spa"/>
+              </div>
+              <div>
+                <h3><a href="#">Amara Resort & SPA</a></h3>
+                <p>
+                  Гостиница
+                  <a href="#">Подробнее</a>
+                </p>
+                <p>
+                  от 4000 р.
+                  <a href="#">Забронировать</a>
+                </p>
+                <p>
+                  <!-- background-image. Количество звезд -->
+                  Рейтинг: 8,5
+                </p>
+              </div>
+            </article>
           </li>
           <li>
             <article>
