@@ -21,7 +21,7 @@
       <section>
         <!-- background-image - фоновая размытая картинка -->
         <h2 class="visually-hidden">Фильтр отелей</h2>
-        <form method="get" action="https://echo.htmlacademy.ru" oninput="costsoutput_from.value=cost.value">
+        <form method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Инфраструктура:</legend>
             <ul>
@@ -59,18 +59,15 @@
           <fieldset>
             <legend>Стоимость в сутки (Р):</legend>
             <div>
-              <ul>
-                <li>От <output name="costsoutput_from"></output></li>
-          <!--  <li>До <output name="costsoutput_to"></output></li> -->
-              </ul>
+              <!-- вывод цен от ползунков -->
             </div>
             <div>
-              <input type="range" name="cost" id="cost" min="0" max="7000" step="10">
+              <!-- ползунки -->
             </div>
             <button type="submit">Показать</button>
           </fieldset>
-        </section>
-      </form>
+        </form>
+      </section>
 
       <section>
         <h2 class="visually-hidden">Сортировка отелей</h2>
