@@ -3,25 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="main-navigation">
         <a><img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип Седоны"/></a>
         <ul>
-          <li><a>Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="catalog.html">Гостиницы</a></li>
+          <li class="site-navigation"><span>Информация</span></li>
+          <li class="site-navigation"><a href="#">Фото и видео</a></li>
+          <li class="site-navigation"><a href="#">Карта штата</a></li>
+          <li class="site-navigation"><a href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section>
-        <h2 class="visually-hidden">Приветствие</h2>
+      <h1 class="visually-hidden">Поиск гостиницы в Седоне</h1>
 
-        <div><!-- Фоновая картинка гор в div через background-image -->
+      <section class="welcome">
+        <h2 class="visually-hidden">Приветствие</h2>
+        <div class="welcome-image">
           <div>
             <img src="img/intro-welcome.svg" width="459" height="353" alt="Welcome to the gorgeous Sedona"/>
           </div>
@@ -99,7 +103,7 @@
         </ul>
       </section>
 
-      <section>
+      <section class="interest">
         <h2 class="visually-hidden">Заинтересовались?</h2>
         <p>
           <strong>Заинтересовались?</strong>
@@ -107,49 +111,50 @@
         <p>
           Укажите предполагаемые даты поездки,<br />и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <button type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+        <button type="button" class="button button-find">Поиск гостиницы в Седоне</button>
         <form action="https://echo.htmlacademy.ru" method="post">
           <p>
             <label for="search-arrival-date">Дата заезда:</label>
-            <input type="date" name="arrival date" id="search-arrival-date"/>
+            <input type="date" name="arrival date" id="search-arrival-date" value="2017-04-24"/>
           </p>
           <p>
             <label for="search-departure-date">Дата выезда:</label>
-            <input type="date" name="date of departure" id="search-departure-date"/>
+            <input type="date" name="date of departure" id="search-departure-date" value="2017-07-04"/>
           </p>
           <p>
             <label for="search-adult">Взрослые:</label>
-            <input type="number" name="adult" id="search-adult" min="0" step="1"/>
+            <input type="number" name="adult" id="search-adult" value="2" min="0" step="1"/>
           </p>
           <p>
             <label for="search-children">Дети:</label>
-            <input type="number" name="children" id="search-children" min="0" step="1"/>
+            <input type="number" name="children" id="search-children" value="0" min="0" step="1"/>
           </p>
-          <button type="submit">Найти</button>
+          <button type="submit" class="button button-search">Найти</button>
         </form>
       </section>
 
       <section>
         <h2 class="visually-hidden">Карта с местоположением Седоны</h2>
-        <!-- Карта -->
+        <div class="map">
+        </div>
       </section>
     </main>
 
     <footer>
-      <p>
+      <p class="footer-contacts">
         #visitSEDONA<br />
         Тел: <a href="tel:+74956660266">+7(495) 666-02-66</a>
       </p>
-      <div>
+      <div class="footer-social">
         <ul>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Youtube</a></li>
+          <li class="social-button social-button-twitter"><a href="#" aria-label="Twitter"></a>Twitter</li>
+          <li class="social-button social-button-facebook"><a href="#" aria-label="Facebook"></a>Facebook</li>
+          <li class="social-button social-button-youtube"><a href="#" aria-label="Youtube"></a>Youtube</li>
         </ul>
       </div>
-      <div>
+      <div class="footer-copyright">
         <p>Website by</p>
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип Html Academy"/></a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип Html Academy"></a>
       </div>
     </footer>
 

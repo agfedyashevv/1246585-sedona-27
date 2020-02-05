@@ -3,16 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="main-navigation">
         <a href="index.html"><img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип Седоны"/></a>
         <ul>
-          <li><a href="index.html">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a>Гостиницы</a></li>
+          <li class="site-navigation"><a href="index.html">Информация</a></li>
+          <li class="site-navigation"><a href="#">Фото и видео</a></li>
+          <li class="site-navigation"><a href="#">Карта штата</a></li>
+          <li class="site-navigation"><span>Гостиницы</span></li>
         </ul>
       </nav>
     </header>
@@ -88,23 +91,23 @@
         </div>
       </section>
 
-      <section>
+      <section class="catalog">
         <h2 class="visually-hidden">Список отелей</h2>
-        <ul>
+        <ul class="catalog-list">
           <li>
             <article>
               <div>
                 <img src="img/hotel-picture-amara.jpg" width="135" height="90" alt="Гостиница Amara Resort & Spa"/>
               </div>
               <div>
-                <h3><a href="#">Amara Resort & SPA</a></h3>
+                <h3 class="catalog-item-title"><a href="#">Amara Resort & SPA</a></h3>
                 <p>
                   Гостиница
-                  <a href="#">Подробнее</a>
+                  <a href="#" class="button button-detail">Подробнее</a>
                 </p>
                 <p>
                   от 4000 р.
-                  <a href="#">Забронировать</a>
+                  <a href="#" class="button button-reservation">Забронировать</a>
                 </p>
                 <p>
                   <!-- background-image. Количество звезд -->
@@ -119,14 +122,14 @@
                 <img src="img/hotel-picture-desert.jpg" width="135" height="90" alt="Мотель Desert Quail Inn"/>
               </div>
               <div>
-                <h3><a href="#">Desert Quail INN</a></h3>
+                <h3 class="catalog-item-title"><a href="#">Desert Quail INN</a></h3>
                 <p>
                   Мотель
-                  <a href="#">Подробнее</a>
+                  <a href="#" class="button button-detail">Подробнее</a>
                 </p>
                 <p>
                   от 3000 р.
-                  <a href="#">Забронировать</a>
+                  <a href="#" class="button button-reservation">Забронировать</a>
                 </p>
                 <p>
                   <!-- background-image. Количество звезд -->
@@ -141,14 +144,14 @@
                 <img src="img/hotel-picture-villas.jpg" width="135" height="90" alt="Апартаменты Villas at Poco Diablo"/>
               </div>
               <div>
-                <h3><a href="#">Villas at Poco Diablo</a></h3>
+                <h3 class="catalog-item-title"><a href="#">Villas at Poco Diablo</a></h3>
                 <p>
                   Апартаменты
-                  <a href="#">Подробнее</a>
+                  <a href="#" class="button button-detail">Подробнее</a>
                 </p>
                 <p>
                   от 2000 р.
-                  <a href="#">Забронировать</a>
+                  <a href="#" class="button button-reservation">Забронировать</a>
                 </p>
                 <p>
                   <!-- background-image. Количество звезд -->
@@ -162,15 +165,15 @@
     </main>
 
     <footer>
-      <p>
+      <p class="footer-contacts">
         #visitSEDONA<br />
         Тел: <a href="tel:+74956660266">+7(495) 666-02-66</a>
       </p>
-      <div>
+      <div class="footer-social">
         <ul>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Youtube</a></li>
+          <li class="social-button social-button-twitter"><a href="#" aria-label="Twitter"></a>Twitter</li>
+          <li class="social-button social-button-facebook"><a href="#" aria-label="Facebook"></a>Facebook</li>
+          <li class="social-button social-button-youtube"><a href="#" aria-label="Youtube"></a>Youtube</li>
         </ul>
       </div>
       <div>
