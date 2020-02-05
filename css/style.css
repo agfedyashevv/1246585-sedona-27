@@ -157,12 +157,16 @@ a {
   background-color: #81b3d2;
   font-size: 14px;
   line-height: 21px;
+  width: 110px;
+  height: 27px;
 }
 
 .button-reservation {
   background-color: #766357;
   font-size: 14px;
   line-height: 21px;
+  width: 142px;
+  height: 27px;
 }
 
 .map {
@@ -174,11 +178,46 @@ a {
   height: 594px;
 }
 
+.stars {
+  height: 17px;
+  background-image: url("../img/star.svg");
+  background-repeat: repeat-x;
+  background-position: top right;
+}
+
+.stars-4 {
+  width: 72px;
+}
+
+.stars-3 {
+  width: 54px;
+}
+
+.stars-2 {
+  width: 36px;
+}
+
+.rating {
+  background-color: #f2f2f2;
+  width: 110px;
+  height: 27px;
+  color: #666666;
+  font-size: 14px;
+  line-height: 21px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.rating1 {
+
+}
+
 .footer-contacts {
   color: #000000;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
+  text-align: left;
 }
 
 .footer-contacts a {
@@ -186,8 +225,14 @@ a {
   text-decoration: none;
 }
 
+.footer-social {
+  text-align: center;
+}
+
 .social-button {
   background-color: #81b3d2;
+  width: 46px;
+  height: 48px;
 }
 
 .social-button-twitter {
@@ -211,4 +256,5 @@ a {
 .footer-copyright {
   color: #000000;
   line-height: 26px;
+  text-align: right;
 }
