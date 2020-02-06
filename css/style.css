@@ -116,12 +116,16 @@ a {
   background-color: #766357;
   font-size: 21px;
   line-height: 26px;
+  width: 568px;
+  height: 86px;
 }
 
 .button-search {
   background-color: #81b3d2;
   font-size: 21px;
   line-height: 26px;
+  width: 458px;
+  height: 58px;
 }
 
 .button-find:hover,
@@ -154,6 +158,7 @@ a {
 }
 
 .button-detail {
+  display: inline-block;
   background-color: #81b3d2;
   font-size: 14px;
   line-height: 21px;
@@ -162,6 +167,7 @@ a {
 }
 
 .button-reservation {
+  display: inline-block;
   background-color: #766357;
   font-size: 14px;
   line-height: 21px;
@@ -206,10 +212,6 @@ a {
   line-height: 21px;
   vertical-align: middle;
   text-align: center;
-}
-
-.rating1 {
-
 }
 
 .footer-contacts {
