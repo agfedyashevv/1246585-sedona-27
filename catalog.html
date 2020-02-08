@@ -28,15 +28,15 @@
           <fieldset>
             <legend>Инфраструктура:</legend>
             <ul>
-              <li>
+              <li class="filter-infrastructure">
                 <input type="checkbox" name="pool" id="filter-pool" checked>
                 <label for="filter-pool">Бассейн</label>
               </li>
-              <li>
+              <li class="filter-infrastructure">
                 <input type="checkbox" name="parking" id="filter-parking">
                 <label for="filter-parking">Парковка</label>
               </li>
-              <li>
+              <li class="filter-infrastructure">
                 <input type="checkbox" name="wifi" id="filter-wifi">
                 <label for="filter-wifi">Wi-Fi</label>
               </li>
@@ -45,15 +45,15 @@
           <fieldset>
             <legend>Тип жилья:</legend>
             <ul>
-              <li>
+              <li class="filter-type-of-housing">
                 <input type="checkbox" name="holel" id="filter-holel" checked>
                 <label for="filter-holel">Гостиница</label>
               </li>
-              <li>
+              <li class="filter-type-of-housing">
                 <input type="checkbox" name="motel" id="filter-motel" checked>
                 <label for="filter-motel">Мотель</label>
               </li>
-              <li>
+              <li class="filter-type-of-housing">
                 <input type="checkbox" name="apartments" id="filter-apartments" checked>
                 <label for="filter-apartments">Апартаменты</label>
               </li>
@@ -87,15 +87,15 @@
           <ul>
             <li>
               <a href="#">
-                <svg class="sort-list-up" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                  <path fill="#cacaca" d="M5.5 0L0 10h11z"/>
+                <svg class="sort-list-up" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" fill="#cacaca">
+                  <path d="M5.5 0L0 10h11z"/>
                 </svg>
               </a>
             </li>
             <li>
               <a href="#">
-                <svg class="sort-list-down" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                  <path fill="#cacaca" d="M5.5 10L0 0h11"/>
+                <svg class="sort-list-down" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" fill="#cacaca">
+                  <path d="M5.5 10L0 0h11"/>
                 </svg>
               </a>
             </li>
@@ -106,7 +106,7 @@
       <section class="catalog">
         <h2 class="visually-hidden">Список отелей</h2>
         <ul class="catalog-list">
-          <li>
+          <li class="catalog-item">
             <article>
               <div>
                 <img src="img/hotel-picture-amara.jpg" width="135" height="90" alt="Гостиница Amara Resort & Spa"/>
@@ -128,7 +128,7 @@
               </div>
             </article>
           </li>
-          <li>
+          <li class="catalog-item">
             <article>
               <div>
                 <img src="img/hotel-picture-desert.jpg" width="135" height="90" alt="Мотель Desert Quail Inn"/>
@@ -150,7 +150,7 @@
               </div>
             </article>
           </li>
-          <li>
+          <li class="catalog-item">
             <article>
               <div>
                 <img src="img/hotel-picture-villas.jpg" width="135" height="90" alt="Апартаменты Villas at Poco Diablo"/>

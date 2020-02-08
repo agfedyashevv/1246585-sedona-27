@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -17,7 +16,6 @@ body {
   width: 1px;
   height: 1px;
   margin: -1px;
-  …
 }
 
 strong {
@@ -302,7 +300,6 @@ a {
 .sort-list {
   font-size: 12px;
   line-height: 18px;
-
 }
 
 .sort-list-item {
@@ -324,6 +321,31 @@ a {
 .sort-list-up:hover,
 .sort-list-down:hover {
   fill: #231f20;
+}
+
+.sort-list-up:active,
+.sort-list-down:active {
+  fill: #81b3d2;
+}
+
+.filter-infrastructure,
+.filter-type-of-housing {
+  margin-bottom: 25px;
+}
+
+.catalog {
+  border-top: 1px solid #e5e5e5;
+}
+
+.catalog-list {
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-item {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .button-detail {
@@ -378,6 +400,7 @@ a {
   font-size: 14px;
   line-height: 21px;
   text-align: center;
+  margin: 0;
 }
 
 .footer-contacts {
@@ -410,7 +433,6 @@ a {
   background-repeat: no-repeat;
 }
 
-
 .social-button-facebook {
   background-image: url("../img/fb-icon.svg");
   background-position: 50% 50%;
@@ -427,12 +449,4 @@ a {
   color: #000000;
   line-height: 26px;
   text-align: right;
-}
-
-.footer-logo-academy:hover {
-  fill: #81b3d2;
-}
-
-.footer-logo-academy:active {
-  fill: #bdbbbc;
 }
