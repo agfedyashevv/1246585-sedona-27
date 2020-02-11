@@ -12,9 +12,9 @@ body {
 
 .container {
   position: relative;
-  display: block;
-  width: 100%;
-  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -28,11 +28,6 @@ body {
 
 a {
   text-decoration: none;
-}
-
-.main-header {
-  display: block;
-  margin: 0px;
 }
 
 .main-navigation {
@@ -77,10 +72,13 @@ a {
   color: #766357;
 }
 
+.main-header {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+}
+
 .welcome {
-  color: #333333;
-  font-size: 14px;
-  line-height: 26px;
   text-align: center;
 }
 
@@ -90,15 +88,29 @@ a {
   background-position: top center;
   background-repeat: no-repeat;
   margin-top: -83px;
+  min-height: 591px;
 }
 
 .welcome img {
   margin-top: 159px;
 }
 
-.welcome strong {
+.small-city strong {
+  font-weight: 700;
   font-size: 21px;
   color: #000000;
+}
+
+.welcome::after {
+  display: block;
+  content: " ";
+  position: relative;
+  background-image: url("../img/intro-mask.svg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  width: 1200px;
+  height: 59px;
+  bottom: -15px;
 }
 
 .feature-1,
@@ -517,18 +529,26 @@ a {
   justify-content: flex-end;
 }
 
-.main-navigation ul {
+.site-navigation li:first-child,
+.site-navigation li:last-child {
   margin: 0 73px;
 }
 
-.welcome-sedona {
-  position: relative;
+.main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  min-height: 216px;
 }
 
-.welcome-sedona-text-1 {
+.small-city {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 216px;
+  color: #333333;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.small-city-text-1 {
   margin: 0 380px;
 }
