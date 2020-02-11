@@ -10,6 +10,14 @@ body {
   background-color: #ffffff;
 }
 
+.container {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -18,20 +26,27 @@ body {
   margin: -1px;
 }
 
-strong {
-  font-weight: 700;
-}
-
 a {
   text-decoration: none;
 }
 
+.main-header {
+  display: block;
+  margin: 0px;
+}
+
 .main-navigation {
+  position: relative;
   line-height: 26px;
   font-size: 14px;
   font-weight: 700;
   color: #000000;
   background-color: #ffffff;
+}
+
+.main-navigation-logo {
+  position: absolute;
+  left: 529px;
 }
 
 .site-navigation,
@@ -69,11 +84,16 @@ a {
   text-align: center;
 }
 
-.welcome-image {
+.welcome-image-background {
   background-color: #c2dcf5;
   background-image: url("../img/background-photo.jpg");
   background-position: top center;
   background-repeat: no-repeat;
+  margin-top: -83px;
+}
+
+.welcome img {
+  margin-top: 159px;
 }
 
 .welcome strong {
@@ -337,7 +357,10 @@ a {
   border-top: 1px solid #e5e5e5;
 }
 
-.catalog-list {
+.catalog-list,
+.main-navigation ul,
+.feature-recomendation ul,
+.feature-3-4-5 ul {
   margin: 0;
   padding: 0;
 }
@@ -449,4 +472,63 @@ a {
   color: #000000;
   line-height: 26px;
   text-align: right;
+}
+
+/* ----- Сеточные стили ----- */
+
+div {
+  box-shadow: 0 0 0 1px green;
+}
+
+section,
+li {
+  outline: 1px solid red;
+}
+
+p,
+ul,
+a {
+  outline: 1px solid blue;
+}
+
+/* body {
+  background-image: url("D:/HTML-Academy-intensive/Макеты Седоны/sedona-preview_jpeg/sedona-index.jpg");
+  background-size: 1280px auto;
+  background-repeat: no-repeat;
+  background-position: top center;
+} */
+
+.site-navigation {
+  display: flex;
+  min-height: 56px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.site-navigation li {
+  display: flex;
+  flex-grow: 1;
+}
+
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4) {
+  justify-content: flex-end;
+}
+
+.main-navigation ul {
+  margin: 0 73px;
+}
+
+.welcome-sedona {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 216px;
+}
+
+.welcome-sedona-text-1 {
+  margin: 0 380px;
 }
