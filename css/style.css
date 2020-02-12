@@ -158,29 +158,57 @@ a {
 }
 
 .interest {
+  display: flex;
+  flex-direction: column;
+  width: 568px;
   color: #333333;
   font-size: 14px;
   line-height: 26px;
   text-align: center;
   background-color: #ffffff;
+  margin: 0 auto;
 }
 
 .interest strong {
+  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   color: #000000;
 }
 
-.estimated-date {
-  font-size: 14px;
-  line-height: 24px;
+.interest p {
+  margin: 0;
+  /* margin-bottom: 24px; */
 }
 
-.interest form {
+.interest .interest-info {
+  margin-bottom: 24px;
+}
+
+.interest .interest-estimated-date {
+  margin-bottom: 47px;
+}
+
+.interest-estimated-date {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 47px;
+}
+
+.interest-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   color: #000000;
+  width: 458;
   font-size: 14px;
   font-weight: 700;
   line-height: 26px;
+  margin: 55px;
+}
+
+.interest-people input {
+  width: 114px;
 }
 
 .interest input {
@@ -215,6 +243,10 @@ a {
 .interest-calendar-arrival:active,
 .interest-calendar-departure:active {
   fill: #81b3d2;
+}
+
+.footer-logo-academy {
+  display: flex;
 }
 
 .footer-logo-academy:hover {
@@ -444,6 +476,7 @@ a {
   font-weight: 700;
   line-height: 26px;
   text-align: left;
+  margin: 0 169px 0 0;
 }
 
 .footer-contacts a {
@@ -481,9 +514,15 @@ a {
 }
 
 .footer-copyright {
+  display: flex;
+  align-items: center;
   color: #000000;
   line-height: 26px;
-  text-align: right;
+  margin: auto 0;
+}
+
+.footer-copyright p {
+  margin-right: 8px;
 }
 
 /* ----- Сеточные стили ----- */
@@ -539,16 +578,61 @@ a {
   flex-direction: column;
 }
 
+.features {
+  margin-bottom: 50px;
+}
+
 .small-city {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   min-height: 216px;
   color: #333333;
   font-size: 14px;
   line-height: 26px;
 }
 
+.small-city-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .small-city-text-1 {
-  margin: 0 380px;
+  margin-left: 380px;
+  margin-right: 380px;
+  margin-top: 0;
+  margin-bottom: 27px;
+}
+
+.small-city-text-2 {
+  margin: 0;
+}
+
+.main-footer {
+  padding: 36px 0;
+  margin: 0;
+}
+
+.main-footer .main-footer-wrap {
+	display: flex;
+	align-items: center;
+	margin-left: 132px;
+	margin-right: 101px;
+}
+
+.footer-social {
+  margin-right:222px;
+}
+
+.footer-social li {
+  margin-right: 6px;
+}
+
+.footer-social ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
