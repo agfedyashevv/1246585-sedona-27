@@ -207,6 +207,8 @@ a {
   font-size: 14px;
   font-weight: 700;
   line-height: 26px;
+  min-height: 395px;
+  box-sizing: border-box;
   padding: 55px;
   box-shadow: 0 0 20px -5px #b4b4b4;
   z-index: 2;
@@ -298,6 +300,7 @@ a {
   font-weight: 700;
   border: none;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .button-find {
