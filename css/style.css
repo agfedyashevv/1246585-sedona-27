@@ -124,6 +124,10 @@ a {
   height: 256px;
 }
 
+.feature-2 {
+  flex-direction: row-reverse;
+}
+
 .feature-real-city {
   padding-top: 47px;
   padding-bottom: 59px;
@@ -536,7 +540,7 @@ a {
   font-size: 14px;
   line-height: 21px;
   padding: 4px 0;
-  vertical-align: top;
+  vertical-align: middle;
   cursor: pointer;
 }
 
@@ -915,7 +919,23 @@ a {
 
 .feature-1-image,
 .feature-2-image {
+  margin: 0;
+  padding: 0;
   z-index: 1;
+}
+
+.feature-1-image {
+  position: absolute;
+  padding-bottom: 10px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.feature-2-image {
+  position: absolute;
+  padding-bottom: 8px;
+  top: 50%;
+  transform: translate(-150%, -50%);
 }
 
 .feature-list {
@@ -942,6 +962,7 @@ a {
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-color: #ffffff;
   z-index: 2;
 }
 
