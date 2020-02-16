@@ -369,20 +369,20 @@ a {
     inset 0 0 0 2px #e5e5e5;
 }
 
-.interest-calendar-arrival,
-.interest-calendar-departure {
-  position: relative;
-  top: 6px;
-  right: 30px;
+
+.calendar {
+  content: "";
+  position: absolute;
+  transform: translate(428px, 0);
 }
 
-.interest-calendar-arrival:hover,
-.interest-calendar-departure:hover {
+
+.calendar:hover {
   fill: #000000;
 }
 
-.interest-calendar-arrival:active,
-.interest-calendar-departure:active {
+
+.calendar:active {
   fill: #81b3d2;
 }
 
@@ -450,7 +450,6 @@ a {
 .button-detail:active,
 .social-button:active {
   background-color: #5496bd;
-  color: rgba(255, 255, 255, 0.3);
 }
 
 .filter-background-image {
