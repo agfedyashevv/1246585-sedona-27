@@ -504,6 +504,57 @@ a {
   font-weight: 700;
 }
 
+/* .filter-range {
+  width: 314px;
+} */
+
+.filter-range-title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+  height: 32px;
+  margin-bottom: 20px;
+  font-size: 0;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: " ";
+  position: absolute;
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+}
+
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 21px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+}
+
 .button-view {
   border: 2px solid #ffffff;
   color: #ffffff;
@@ -617,6 +668,9 @@ a {
   flex-direction: column;
   justify-content: space-between;
   height: 90px;
+}
+
+.hotel-information-block {
   margin-right: 522px;
 }
 
@@ -900,7 +954,7 @@ a {
 
 /* ----- подсветка блоков ----- */
 
-div {
+/* div {
   box-shadow: 0 0 0 1px green;
 }
 
@@ -913,4 +967,4 @@ p,
 ul,
 a {
   outline: 1px solid blue;
-}
+} */

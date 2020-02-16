@@ -25,7 +25,6 @@
 
       <main>
         <section class="filter-background-image filter-decoration">
-          <!-- background-image - фоновая размытая картинка -->
           <h2 class="visually-hidden">Фильтр отелей</h2>
           <form class="form-filter" method="get" action="https://echo.htmlacademy.ru">
             <fieldset class="form-fieldset">
@@ -62,13 +61,20 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="form-fieldset">
-              <legend class="form-legend">Стоимость в сутки (Р):</legend>
-              <div>
-                <!-- вывод цен от ползунков -->
+            <fieldset class="form-fieldset filter-range">
+              <!-- <button class="button-view" type="submit">Показать</button> -->
+              <!-- <legend class="form-legend">Стоимость в сутки (Р):</legend> -->
+              <div class="filter-range-title">Стоимость в сутки (Р):</div>
+              <div class="price-controls">
+                <label class="min-price">от <input type="number" name="min-price" value="0" min="0"/></label>
+                <label class="max-price">до <input type="number" name="max-price" value="3000" min="0"/></label>
               </div>
-              <div>
-                <!-- ползунки -->
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
               </div>
               <button class="button-view" type="submit">Показать</button>
             </fieldset>
@@ -114,7 +120,7 @@
                 <div class="catalog-article-item hotels-picture">
                   <img src="img/hotel-picture-amara.jpg" width="135" height="90" alt="Гостиница Amara Resort & Spa"/>
                 </div>
-                <div class="catalog-article-item">
+                <div class="catalog-article-item hotel-information-block">
                   <h3 class="catalog-item-title"><a href="#">Amara Resort & SPA</a></h3>
                   <div class="hotel-information">
                     <p class="hotel-type">
@@ -138,7 +144,7 @@
                 <div class="catalog-article-item hotels-picture">
                   <img src="img/hotel-picture-desert.jpg" width="135" height="90" alt="Мотель Desert Quail Inn"/>
                 </div>
-                <div class="catalog-article-item">
+                <div class="catalog-article-item hotel-information-block">
                   <h3 class="catalog-item-title"><a href="#">Desert Quail INN</a></h3>
                   <div class="hotel-information">
                     <p class="hotel-type">
@@ -162,7 +168,7 @@
                 <div class="catalog-article-item hotels-picture">
                   <img src="img/hotel-picture-villas.jpg" width="135" height="90" alt="Апартаменты Villas at Poco Diablo"/>
                 </div>
-                <div class="catalog-article-item">
+                <div class="catalog-article-item hotel-information-block">
                   <h3 class="catalog-item-title"><a href="#">Villas at Poco Diablo</a></h3>
                   <div class="hotel-information">
                     <p class="hotel-type">
