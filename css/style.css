@@ -502,10 +502,6 @@ a {
   font-weight: 700;
 }
 
-/* .filter-range {
-  width: 314px;
-} */
-
 .filter-range-title {
   margin-bottom: 10px;
   font-weight: 700;
@@ -516,32 +512,42 @@ a {
 .price-controls {
   position: relative;
   height: 32px;
+  width: 314px;
   margin-bottom: 20px;
   font-size: 0;
   border: 2px solid #ffffff;
   border-radius: 2px;
+  box-sizing: content-box;
 }
 
 .price-controls::after {
   content: " ";
   position: absolute;
+  top: 50%;
+  left: 50%;
   width: 2px;
   height: 22px;
   background: #ffffff;
+  transform: translate(-50%, -50%);
 }
 
 .price-controls label {
   display: inline-block;
   font-size: 14px;
   line-height: 21px;
+  padding: 4px 0;
   vertical-align: top;
   cursor: pointer;
 }
 
-.price-controls .min-price,
-.price-controls .max-price {
-  width: 90px;
+.price-controls .min-price {
+  width: 92px;
   padding-left: 65px;
+}
+
+.price-controls .max-price {
+  width: 104px;
+  padding-left: 53px;
 }
 
 .price-controls input {
@@ -553,7 +559,50 @@ a {
   border: none;
 }
 
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3)
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  position: absolute;
+  transform: scale(1.1);
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
 .button-view {
+  display: block;
+  margin: 0 auto;
   border: 2px solid #ffffff;
   color: #ffffff;
   border-radius: 3px;
@@ -561,9 +610,10 @@ a {
   line-height: inherit;
   font-weight: inherit;
   background-color: transparent;
-  padding: 6px 34px;
+  padding: 6px 35px;
   text-transform: uppercase;
   text-align: center;
+  cursor: pointer;
 }
 
 .button-view:hover {
