@@ -120,10 +120,6 @@ a {
 .feature-2 {
   background-color: #81b3d2;
   color: #ffffff;
-}
-
-.feature-1,
-.feature-2 {
   box-sizing: border-box;
   height: 256px;
 }
@@ -157,12 +153,14 @@ a {
   padding-bottom: 86px;
   background-color: #ffffff;
   min-height: 330px;
+  z-index: 2;
 }
 
 .feature-3-4-5 {
   background-color: #eeeeee;
   padding-top: 47px;
   padding-bottom: 63px;
+  z-index: 2;
 }
 
 .feature-1 strong,
@@ -863,16 +861,9 @@ a {
   display: flex;
   box-sizing: border-box;
   min-height: 256px;
-  z-index: 2;
 }
 
-.feature-1-image {
-  position: absolute;
-  left: 33,3%;
-  transform: translate(-33,3%);
-  z-index: 1;
-}
-
+.feature-1-image,
 .feature-2-image {
   z-index: 1;
 }
@@ -901,6 +892,7 @@ a {
   justify-content: center;
   align-items: center;
   text-align: center;
+  z-index: 2;
 }
 
 .small-city-text-1 {
