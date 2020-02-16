@@ -455,6 +455,24 @@ a {
   background-color: #81b3d2;
   background-image: url("../img/filter-background.jpg");
   background-repeat: no-repeat;
+  background-position: center;
+  min-height: 217px;
+}
+
+.form-filter {
+  display: flex;
+}
+
+.form-fieldset:first-of-type {
+  margin-right: 115px;
+}
+
+.form-fieldset:last-of-type {
+  margin-left: auto;
+}
+
+.form-legend {
+  margin-bottom: 25px;
 }
 
 .filter-decoration {
@@ -462,11 +480,19 @@ a {
   line-height: 21px;
   font-weight: 400;
   color: #ffffff;
+  padding-left: 72px;
+  padding-right: 72px;
+  padding-top: 27px;
+  padding-bottom: 33px;
+  box-sizing: border-box;
 }
 
 .filter-decoration ul,
+.filter-decoration fieldset,
 .sort ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .filter-decoration fieldset {
@@ -555,8 +581,8 @@ a {
   fill: #81b3d2;
 }
 
-.filter-infrastructure,
-.filter-type-of-housing {
+.filter-infrastructure:not(:last-child),
+.filter-type-of-housing:not(:last-child) {
   margin-bottom: 25px;
 }
 
