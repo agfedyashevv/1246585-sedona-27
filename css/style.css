@@ -684,9 +684,45 @@ a {
   fill: #81b3d2;
 }
 
-.filter-infrastructure:not(:last-child),
-.filter-type-of-housing:not(:last-child) {
-  margin-bottom: 25px;
+.filter-option:not(:last-child) {
+  margin-bottom: 23px;
+}
+
+.filter-option {
+  padding-left: 40px;
+}
+
+.filter-option label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked + label::before {
+  background: url("../img/checkbox-on.svg") no-repeat;
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: -40px;
+  width: 27px;
+  height: 23px;
+}
+
+input[type="checkbox"]:not(:checked) + label::before {
+  background: url("../img/checkbox-off.svg") no-repeat;
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: -40px;
+  width: 27px;
+  height: 23px;
 }
 
 .catalog {
