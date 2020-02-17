@@ -678,6 +678,10 @@ a {
 	text-decoration: none;
 }
 
+.sort-list-current {
+	fill: #81b3d2;
+}
+
 .sort ul,
 .sort p {
   padding: 0;
