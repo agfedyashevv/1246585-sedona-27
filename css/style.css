@@ -71,6 +71,10 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.catalog-item-title a {
+  color: inherit;
+}
+
 .catalog-item-title {
   position: relative;
   top:-6px;
@@ -357,8 +361,17 @@ a {
 }
 
 .interest-people input {
+  width: 46px;
+  height: 38px;
+  text-align: center;
   box-sizing: border-box;
-  width: 114px;
+}
+
+.button-size {
+  width: 34px;
+  height: 38px;
+  border: none;
+  cursor: pointer;
 }
 
 .interest-date input {
@@ -383,18 +396,16 @@ a {
     inset 0 0 0 2px #e5e5e5;
 }
 
-
 .calendar {
   content: "";
   position: absolute;
   transform: translate(428px, 0);
+  cursor: pointer;
 }
-
 
 .calendar:hover {
   fill: #000000;
 }
-
 
 .calendar:active {
   fill: #81b3d2;
@@ -419,6 +430,7 @@ a {
   border: none;
   text-align: center;
   box-sizing: border-box;
+  user-select: none;
 }
 
 .button-find {
@@ -631,6 +643,7 @@ a {
   text-transform: uppercase;
   text-align: center;
   cursor: pointer;
+  user-select: none;
 }
 
 .button-view:hover {
@@ -744,6 +757,30 @@ input[type="checkbox"]:not(:checked) + label::before {
   transform: translate(0, -50%);
   left: -40px;
   width: 27px;
+  height: 23px;
+}
+
+input[type="checkbox"]:checked:disabled + label::before {
+  background: url("../img/checkbox-on-disabled.png") no-repeat;
+  content: "";
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: -40px;
+  width: 27px;
+  height: 23px;
+}
+
+input[type="checkbox"]:not(:checked):disabled + label::before {
+  background: url("../img/checkbox-off-disabled.png") no-repeat;
+  content: "";
+  position: absolute;
+  background-size: cover;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: -40px;
+  width: 23px;
   height: 23px;
 }
 
@@ -957,6 +994,14 @@ input[type="checkbox"]:not(:checked) + label::before {
 .site-navigation li:nth-child(3),
 .site-navigation li:nth-child(4) {
   justify-content: flex-end;
+}
+
+.site-navigation li:nth-child(2) {
+  padding-left: 12px;
+}
+
+.site-navigation li:nth-child(3) {
+  padding-right: 12px;
 }
 
 .main {
