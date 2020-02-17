@@ -17,7 +17,7 @@ body {
   width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
-  box-shadow: 0 0 20px -5px #b4b4b4;
+  box-shadow: 0 0 15px -2px #b4b4b4;
 }
 
 .visually-hidden {
@@ -69,6 +69,14 @@ a {
 .site-navigation a:active,
 .catalog-item-title a:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-item-title {
+  position: relative;
+  top:-6px;
+  display: block;
+  font-size: 21px;
+  line-height: 26px;
 }
 
 .site-navigation span {
@@ -154,16 +162,17 @@ a {
 
 .feature-recomendation {
   padding-top: 60px;
-  padding-bottom: 86px;
+  padding-bottom: 82px;
   background-color: #ffffff;
   min-height: 330px;
+  box-sizing: border-box;
   z-index: 2;
 }
 
 .feature-3-4-5 {
   background-color: #eeeeee;
   padding-top: 47px;
-  padding-bottom: 63px;
+  padding-bottom: 62px;
   z-index: 2;
 }
 
@@ -260,8 +269,8 @@ a {
 }
 
 .future-tourists {
-  padding-left: 78px;
-  padding-right: 78px;
+  padding-left: 76px;
+  padding-right: 76px;
 }
 
 .interest {
@@ -287,10 +296,11 @@ a {
 .catalog-article-item p,
 .catalog-article-item h3 {
   margin: 0;
+  padding: 0;
 }
 
 .interest .interest-info {
-  margin-bottom: 24px;
+  margin-bottom: 23px;
 }
 
 .interest .interest-estimated-date {
@@ -300,7 +310,7 @@ a {
 .interest-estimated-date {
   font-size: 14px;
   line-height: 24px;
-  margin-bottom: 47px;
+  margin-bottom: 46px;
 }
 
 .interest-form {
@@ -313,13 +323,13 @@ a {
   line-height: 26px;
   min-height: 395px;
   box-sizing: border-box;
-  padding: 55px;
-  box-shadow: 0 0 20px -5px #b4b4b4;
+  padding: 52px 55px 55px 55px;
+  box-shadow: 0 5px 20px -2px #b4b4b4;
   z-index: 2;
 }
 
 .interest-form p {
-  margin-bottom: 29px;
+  margin-bottom: 25px;
 }
 
 .interest-item {
@@ -327,6 +337,10 @@ a {
   justify-content: space-between;
   align-items: center;
   flex-grow: 1;
+}
+
+.interest-item input {
+  text-transform: uppercase;
 }
 
 .interest-people:last-of-type {
@@ -763,7 +777,7 @@ input[type="checkbox"]:not(:checked) + label::before {
 
 .hotel-information {
   display: flex;
-  min-height: 57px;
+  min-height: 62px;
 }
 
 .hotel-information p:first-child {
@@ -994,7 +1008,7 @@ input[type="checkbox"]:not(:checked) + label::before {
 .small-city-block {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  padding-top: 58px;
   align-items: center;
   text-align: center;
   background-color: #ffffff;
