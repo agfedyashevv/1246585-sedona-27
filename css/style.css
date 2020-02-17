@@ -673,6 +673,11 @@ a {
   width: 238px;
 }
 
+.sort-current {
+	color: #81b3d2;
+	text-decoration: none;
+}
+
 .sort ul,
 .sort p {
   padding: 0;
