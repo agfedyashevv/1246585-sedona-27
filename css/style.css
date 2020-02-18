@@ -338,9 +338,12 @@ a {
 
 .interest-item {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   flex-grow: 1;
+}
+
+.interest-date {
+  justify-content: space-between;
 }
 
 .interest-item input {
@@ -356,8 +359,15 @@ a {
 }
 
 .interest-people {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   box-sizing: border-box;
-  width: 229px;
+  flex-basis: 229px;
+}
+
+.interest-people label {
+  margin-right: auto;
 }
 
 .interest-people input {
@@ -368,10 +378,37 @@ a {
 }
 
 .button-size {
+  position: relative;
+  background-color: #f2f2f2;
   width: 34px;
   height: 38px;
   border: none;
-  cursor: pointer;
+}
+
+.button-minus::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 3px;
+  background-color: #a9a9a9;
+  top: 18px;
+  left: 14px;
+
+}
+
+.button-plus::before,
+.button-plus::after {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 3px;
+  background-color: #a9a9a9;
+  top: 18px;
+  right: 13px;
+}
+
+.button-plus::before {
+  transform: rotate(90deg);
 }
 
 .interest-date input {
@@ -734,10 +771,6 @@ a {
   user-select: none;
 }
 
-input[type="checkbox"] {
-  display: none;
-}
-
 input[type="checkbox"]:checked + label::before {
   background: url("../img/checkbox-on.svg") no-repeat;
   content: "";
@@ -800,8 +833,8 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 .catalog-item {
   display: flex;
   border-bottom: 1px solid #e5e5e5;
-  min-height: 150px;
-  padding: 0 72px;
+  min-height: 90px;
+  padding: 30px 72px;
 }
 
 .catalog-article {
@@ -814,7 +847,7 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 90px;
+  min-height: 90px;
 }
 
 .hotel-information-block {
@@ -1088,11 +1121,10 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 }
 
 .main-footer {
-  background: #ffffff;
-  opacity: 0.9;
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 36px 0;
   margin: 0;
-  z-index: 3;
+  z-index: 1;
 }
 
 .main-footer .main-footer-wrap {
@@ -1120,7 +1152,8 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 
 /* ----- подсветка блоков ----- */
 
-/* div {
+/* div,
+fieldset {
   box-shadow: 0 0 0 1px green;
 }
 
