@@ -370,19 +370,26 @@ a {
   margin-right: auto;
 }
 
-.interest-people input {
-  width: 46px;
+.interest-input-people {
+  width: 38px;
   height: 38px;
   text-align: center;
   box-sizing: border-box;
+  padding: inherit;
+  padding: 6px 3px;
 }
 
 .button-size {
   position: relative;
   background-color: #f2f2f2;
-  width: 34px;
+  width: 38px;
   height: 38px;
   border: none;
+}
+
+.button,
+.button-size {
+  cursor: pointer;
 }
 
 .button-minus::before {
@@ -393,7 +400,6 @@ a {
   background-color: #a9a9a9;
   top: 18px;
   left: 14px;
-
 }
 
 .button-plus::before,
@@ -411,6 +417,18 @@ a {
   transform: rotate(90deg);
 }
 
+.button-minus:hover::before,
+.button-plus:hover::before,
+.button-plus:hover::after {
+  background-color: #000000;
+}
+
+.button-minus:active::before,
+.button-plus:active::before,
+.button-plus:active::after {
+  background-color: #81b3d2;
+}
+
 .interest-date input {
   box-sizing: border-box;
   width: 346px;
@@ -420,7 +438,6 @@ a {
   font: inherit;
   background-color: #f2f2f2;
   border: none;
-  padding: 6px 13px;
 }
 
 .interest input:hover {
@@ -431,6 +448,10 @@ a {
   background-color: #ffffff;
   box-shadow:
     inset 0 0 0 2px #e5e5e5;
+}
+
+.interest-input-date {
+  padding: 6px 13px;
 }
 
 .calendar {
@@ -953,7 +974,7 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
   font-weight: 700;
   line-height: 26px;
   text-align: left;
-  margin: 0 169px 0 0;
+  margin: 0;
 }
 
 .footer-contacts a {
@@ -1129,13 +1150,16 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 
 .main-footer .main-footer-wrap {
 	display: flex;
+  justify-content: space-between;
 	align-items: center;
-	margin-left: 132px;
-	margin-right: 101px;
+  margin-top: -3px;
+	padding-left: 123px;
+	padding-right: 101px;
+  flex-basis: 33.33%;
 }
 
 .footer-social {
-  margin-right:222px;
+  margin-right: 45px;
 }
 
 .footer-social li {
@@ -1152,7 +1176,7 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 
 /* ----- подсветка блоков ----- */
 
-/* div,
+div,
 fieldset {
   box-shadow: 0 0 0 1px green;
 }
@@ -1166,4 +1190,4 @@ p,
 ul,
 a {
   outline: 1px solid blue;
-} */
+}
