@@ -1030,7 +1030,7 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 }
 
 .site-navigation li:first-child {
-  padding-left: 73px;
+  padding-left: 72px;
 }
 
 .site-navigation li:last-child {
