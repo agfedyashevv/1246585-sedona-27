@@ -300,7 +300,6 @@ a {
 .catalog-article-item p,
 .catalog-article-item h3 {
   margin: 0;
-  padding: 0;
 }
 
 .interest .interest-info {
@@ -348,6 +347,10 @@ a {
 
 .interest-item input {
   text-transform: uppercase;
+}
+
+.interest-item input:focus {
+  outline: 2px solid #e5e5e5;
 }
 
 .interest-people:last-of-type {
@@ -936,20 +939,20 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 .stars {
   height: 17px;
   background-image: url("../img/star.svg");
-  background-repeat: repeat-x;
-  background-position: top right;
+  background-repeat: space;
+  background-size: 18px;
 }
 
 .stars-4 {
-  width: 72px;
+  width: 89px;
 }
 
 .stars-3 {
-  width: 54px;
+  width: 65px;
 }
 
 .stars-2 {
-  width: 36px;
+  width: 41px;
 }
 
 .hotel-rating {
@@ -1127,7 +1130,7 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
   margin-left: 380px;
   margin-right: 380px;
   margin-top: 0;
-  margin-bottom: 27px;
+  margin-bottom: 25px;
 }
 
 .small-city-text-2 {
