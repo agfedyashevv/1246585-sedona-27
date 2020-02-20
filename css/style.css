@@ -997,6 +997,7 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
   background-color: #81b3d2;
   width: 46px;
   height: 48px;
+  cursor: pointer;
 }
 
 .social-button a {
