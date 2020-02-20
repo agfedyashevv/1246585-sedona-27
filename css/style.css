@@ -518,12 +518,6 @@ a {
   background-color: #604e43;
 }
 
-.button-find:active,
-.button-reservation:active {
-  background-color: #503e33;
-  color: rgba(255, 255, 255, 0.3);
-}
-
 .button-search:hover,
 .button-search:focus,
 .button-detail:hover,
@@ -533,10 +527,21 @@ a {
   background-color: #669ec0;
 }
 
+.button-find:active,
+.button-reservation:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .button-search:active,
 .button-detail:active,
 .social-button:active {
   background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.social-button:active path {
+  opacity: 0.3;
 }
 
 .filter-background-image {
@@ -986,32 +991,16 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 }
 
 .social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #81b3d2;
   width: 46px;
   height: 48px;
 }
 
 .social-button a {
-  display: block;
-  height: 100%;
-}
-
-.social-button-twitter {
-  background-image: url("../img/twitter.svg");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-}
-
-.social-button-facebook {
-  background-image: url("../img/fb-icon.svg");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-}
-
-.social-button-youtube {
-  background-image: url("../img/youtube.svg");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+  display: flex;
 }
 
 .footer-copyright {
@@ -1162,11 +1151,14 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 }
 
 .footer-social {
+  position: relative;
   margin-right: 45px;
 }
 
 .footer-social li {
   margin-right: 6px;
+  margin-top: 3px;
+  margin-bottom: 3px;
 }
 
 .footer-social ul {
@@ -1174,12 +1166,11 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 /* ----- подсветка блоков ----- */
 
-div,
+/* div,
 fieldset {
   box-shadow: 0 0 0 1px green;
 }
@@ -1193,4 +1184,4 @@ p,
 ul,
 a {
   outline: 1px solid blue;
-}
+} */
