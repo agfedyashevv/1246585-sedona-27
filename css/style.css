@@ -154,7 +154,7 @@ a {
 
 .feature-real-city p:nth-of-type(2),
 .feature-diablo p:nth-of-type(2) {
-  margin-bottom: 21px;
+  margin-bottom: 22px;
 }
 
 .feature-diablo {
@@ -200,8 +200,7 @@ a {
 .feature-real-city,
 .feature-diablo,
 .feature-recomendation li,
-.feature-3-4-5 li
-{
+.feature-3-4-5 li {
   text-align: center;
 }
 
