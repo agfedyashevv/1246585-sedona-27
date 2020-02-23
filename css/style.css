@@ -133,7 +133,7 @@ a {
   background-color: #81b3d2;
   color: #ffffff;
   box-sizing: border-box;
-  height: 256px;
+  min-height: 256px;
 }
 
 .feature-2 {
@@ -182,18 +182,18 @@ a {
 
 .feature-1 strong,
 .feature-2 strong {
-  font-size: 21px;
   display: block;
-  width: 60%;
+  font-size: 21px;
+  width: 75%;
   margin: 0 auto;
 }
 
 .feature-recomendation strong,
 .feature-3-4-5 strong {
   display: block;
+  font-size: 21px;
   width: 60%;
   margin: 0 auto;
-  font-size: 21px;
   color: #000000;
 }
 
@@ -519,7 +519,7 @@ a {
   font-size: 21px;
   line-height: 26px;
   width: 458px;
-  margin-top: 23px;
+  margin-top: 22px;
   height: 58px;
 }
 
@@ -891,6 +891,7 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
+  width: 100%;
 }
 
 .catalog-article-item {
@@ -901,7 +902,7 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 }
 
 .hotel-information-block {
-  margin-right: 522px;
+  margin-right: auto;
 }
 
 .hotel-information {
@@ -1026,9 +1027,11 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 
 .site-navigation li:nth-child(2) {
   padding-left: 12px;
+  padding-right: 70px;
 }
 
 .site-navigation li:nth-child(3) {
+  padding-left: 70px;
   padding-right: 12px;
 }
 
@@ -1087,6 +1090,9 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
   display: flex;
   flex-direction: column;
   padding-top: 58px;
+  padding-bottom: 51px;
+  padding-left: 60px;
+  padding-right: 60px;
   align-items: center;
   text-align: center;
   background-color: #ffffff;
@@ -1094,8 +1100,8 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 }
 
 .small-city-text-1 {
-  margin-left: 380px;
-  margin-right: 380px;
+  margin-left: 290px;
+  margin-right: 290px;
   margin-top: 0;
   margin-bottom: 24px;
 }
