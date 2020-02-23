@@ -136,10 +136,6 @@ a {
   min-height: 256px;
 }
 
-.feature-2 {
-  flex-direction: row-reverse;
-}
-
 .feature-real-city {
   padding-top: 47px;
   padding-bottom: 59px;
@@ -158,6 +154,8 @@ a {
 }
 
 .feature-diablo {
+  position: absolute;
+  right: 0;
   padding-top: 46px;
   padding-bottom: 60px;
   padding-left: 48px;
@@ -466,13 +464,14 @@ a {
 .calendar {
   position: absolute;
   display: flex;
+  justify-content: center;
+  align-items: center;
   border: none;
   background-color: transparent;
   width: 38px;
   height: 38px;
   box-sizing: border-box;
   right: 0;
-  justify-content: center;
 }
 
 .calendar-svg:hover {
@@ -928,6 +927,7 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 .hotels-picture {
   display: flex;
   margin-right: 30px;
+  background-color: #f2f2f2;
 }
 
 .button-detail {
@@ -1064,7 +1064,7 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
   position: absolute;
   padding-bottom: 8px;
   top: 50%;
-  transform: translate(-150%, -50%);
+  transform: translate(0, -50%);
 }
 
 .feature-list {
