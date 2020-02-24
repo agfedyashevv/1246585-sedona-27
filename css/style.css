@@ -287,6 +287,14 @@ a {
   padding-top: 51px;
 }
 
+.interest-form-wrap {
+  display: flex;
+}
+
+.interest-close {
+  display: block;
+}
+
 .interest strong {
   font-weight: 700;
   font-size: 30px;
