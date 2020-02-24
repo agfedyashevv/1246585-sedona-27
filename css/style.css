@@ -448,6 +448,10 @@ a {
   width: 346px;
 }
 
+.interest-date input::placeholder {
+  color: inherit;
+}
+
 .interest input {
   font: inherit;
   background-color: #f2f2f2;
