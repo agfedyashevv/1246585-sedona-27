@@ -10,6 +10,24 @@ body {
   background-color: #f2f2f2;
 }
 
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 .container {
   position: relative;
   display: flex;
@@ -26,10 +44,6 @@ body {
   width: 1px;
   height: 1px;
   margin: -1px;
-}
-
-a {
-  text-decoration: none;
 }
 
 .main-navigation {
@@ -132,7 +146,6 @@ a {
 .feature-2 {
   background-color: #81b3d2;
   color: #ffffff;
-  box-sizing: border-box;
   min-height: 256px;
 }
 
@@ -167,7 +180,6 @@ a {
   padding-bottom: 82px;
   background-color: #ffffff;
   min-height: 330px;
-  box-sizing: border-box;
   z-index: 2;
 }
 
@@ -333,7 +345,6 @@ a {
   font-weight: 700;
   line-height: 26px;
   min-height: 395px;
-  box-sizing: border-box;
   padding: 54px 55px 52px 55px;
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
   z-index: 2;
@@ -375,7 +386,6 @@ a {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  box-sizing: border-box;
   flex-basis: 229px;
   height: 38px;
 }
@@ -388,7 +398,6 @@ a {
   width: 38px;
   height: 38px;
   text-align: center;
-  box-sizing: border-box;
   padding: inherit;
   padding: 6px 3px;
 }
@@ -444,7 +453,6 @@ a {
 }
 
 .interest-date input {
-  box-sizing: border-box;
   width: 346px;
 }
 
@@ -482,7 +490,6 @@ a {
   background-color: transparent;
   width: 38px;
   height: 38px;
-  box-sizing: border-box;
   right: 0;
 }
 
@@ -512,7 +519,6 @@ a {
   font-weight: 700;
   border: none;
   text-align: center;
-  box-sizing: border-box;
   user-select: none;
 }
 
@@ -595,11 +601,7 @@ a {
   line-height: 21px;
   font-weight: 400;
   color: #ffffff;
-  padding-left: 71px;
-  padding-right: 72px;
-  padding-top: 27px;
-  padding-bottom: 32px;
-  box-sizing: border-box;
+  padding: 27px 72px 32px 71px;
 }
 
 .filter-decoration ul,
@@ -702,6 +704,7 @@ a {
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(255, 255, 255, 0.2);
   cursor: pointer;
+  box-sizing: content-box;
 }
 
 .range-toggle:hover {
@@ -884,7 +887,6 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 }
 
 .catalog-list,
-.main-navigation ul,
 .feature-recomendation ul,
 .feature-3-4-5 ul,
 .feature p {
@@ -1012,7 +1014,6 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 }
 
 .rating-value {
-  box-sizing: border-box;
   background-color: #f2f2f2;
   color: #666666;
   width: 110px;
@@ -1025,16 +1026,15 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 
 .site-navigation {
   display: flex;
-  min-height: 56px;
-  align-items: center;
+  padding: 15px 0;
+  margin: 0;
   flex-wrap: wrap;
 }
 
 .site-navigation li {
   display: flex;
   justify-content: flex-start;
-  flex-basis: 25%;
-  box-sizing: border-box;
+  width: 25%;
 }
 
 .site-navigation li:first-child {
@@ -1068,7 +1068,6 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 .feature {
   position: relative;
   display: flex;
-  box-sizing: border-box;
   min-height: 256px;
 }
 
@@ -1099,7 +1098,6 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 
 .feature-item {
   width: 400px;
-  box-sizing: border-box;
 }
 
 .small-city {
@@ -1108,7 +1106,6 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
   color: #333333;
   font-size: 14px;
   line-height: 26px;
-  box-sizing: border-box;
 }
 
 .small-city-block {
@@ -1144,13 +1141,11 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 
 .main-footer-wrap {
 	display: flex;
-  box-sizing: border-box;
 }
 
 .main-footer-wrap div {
   display: flex;
   flex-basis: 400px;
-  box-sizing: border-box;
   justify-content: center;
 }
 
