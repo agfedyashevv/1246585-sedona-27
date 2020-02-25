@@ -439,6 +439,9 @@ html {
   transform: rotate(90deg);
 }
 
+.button-minus:focus::before,
+.button-plus:focus::before,
+.button-plus:focus::after,
 .button-minus:hover::before,
 .button-plus:hover::before,
 .button-plus:hover::after {
@@ -497,7 +500,8 @@ html {
   right: 0;
 }
 
-.calendar:hover svg {
+.calendar:hover svg,
+.calendar:focus svg {
   fill: #000000;
 }
 
@@ -509,6 +513,7 @@ html {
   display: flex;
 }
 
+.footer-logo-academy:focus,
 .footer-logo-academy:hover {
   fill: #81b3d2;
 }
