@@ -287,6 +287,7 @@ html {
 }
 
 .interest {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 568px;
@@ -297,10 +298,16 @@ html {
   background-color: #ffffff;
   margin: 0 auto;
   padding-top: 51px;
+  z-index: 2;
 }
 
 .interest-form-wrap {
+  position: absolute;
   display: flex;
+  width: 568px;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .interest-close {
@@ -973,23 +980,22 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 
 .map {
   position: relative;
-  margin-top:-395px;
-  height: 473px;
   z-index: 1;
 }
 
-.map-image {
+.map img {
   background-color: #eeeeee;
-  background-image: url("../img/map.jpg");
-  background-size: 1200px 594px;
-  background-position: top center;
-  background-repeat: no-repeat;
-  height: 594px;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .map iframe {
-  position: relative;
-  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .map div {
@@ -1137,7 +1143,7 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 .main-footer {
   background-color: rgba(255, 255, 255, 0.9);
   padding: 36px 0;
-  margin: 0;
+  margin: -120px 0 0 0;
   z-index: 2;
 }
 
