@@ -97,7 +97,7 @@ html {
   line-height: 26px;
 }
 
-.site-navigation span {
+.current-page {
   color: #766357;
 }
 
@@ -384,9 +384,8 @@ html {
 
 .interest-people {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-  flex-basis: 229px;
+  width: 50%;
   height: 38px;
 }
 
@@ -466,6 +465,10 @@ html {
   border: none;
 }
 
+.interest-input-date {
+  margin-left: auto;
+}
+
 .interest input:hover {
   background-color: #ebebeb;
 }
@@ -490,14 +493,15 @@ html {
   background-color: transparent;
   width: 38px;
   height: 38px;
+  top: 0;
   right: 0;
 }
 
-.calendar-svg:hover {
+.calendar:hover svg {
   fill: #000000;
 }
 
-.calendar-svg:active {
+.calendar:active svg {
   fill: #81b3d2;
 }
 
@@ -1060,11 +1064,6 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
   padding-right: 12px;
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-}
-
 .feature {
   position: relative;
   display: flex;
@@ -1094,6 +1093,7 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 
 .feature-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .feature-item {
@@ -1109,13 +1109,10 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 }
 
 .small-city-block {
-  display: flex;
-  flex-direction: column;
   padding-top: 58px;
   padding-bottom: 51px;
   padding-left: 60px;
   padding-right: 60px;
-  align-items: center;
   text-align: center;
   background-color: #ffffff;
   z-index: 2;
