@@ -378,7 +378,7 @@ html {
 }
 
 .interest-item input:focus {
-  outline: 2px solid #e5e5e5;
+  outline: none;
 }
 
 .interest-people:last-of-type {
@@ -675,6 +675,10 @@ html {
   cursor: pointer;
 }
 
+input[type='number'] {
+  -webkit-appearance: textfield;
+}
+
 .price-controls .min-price {
   width: 92px;
   padding-left: 65px;
@@ -900,6 +904,7 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 
 .catalog {
   border-top: 1px solid #e5e5e5;
+  margin-bottom: 120px;
 }
 
 .catalog-list,
@@ -998,13 +1003,6 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
   height: 100%;
 }
 
-.map div {
-  position: relative;
-  top: -6px;
-  transform: translate(0, -100%);
-  z-index: 1;
-}
-
 .stars {
   height: 17px;
   background-image: url("../img/star.svg");
@@ -1079,13 +1077,13 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
   position: relative;
   display: flex;
   min-height: 256px;
+  overflow: hidden;
 }
 
 .feature-1-image,
 .feature-2-image {
   margin: 0;
   padding: 0;
-  z-index: 1;
 }
 
 .feature-1-image {
