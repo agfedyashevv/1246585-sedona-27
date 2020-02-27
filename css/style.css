@@ -302,16 +302,44 @@ html {
 }
 
 .interest-form-wrap {
-    display: none;
-}
-
-.interest-show {
   position: absolute;
   display: flex;
   width: 568px;
   top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
+  margin: 0 auto;
+}
+
+.interest-hide {
+  display: none;
+}
+
+.form-error {
+  animation: shake 0.6s;
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+      -webkit-transform: translateX(10px);
+              transform: translateX(10px);
+    }
 }
 
 .interest strong {
@@ -791,21 +819,18 @@ input[type='number'] {
   text-decoration: underline dashed rgba(129, 179, 210, 1);
   font-size: 12px;
   line-height: 18px;
+  margin-right: 33px;
 }
 
 .sort-list-ul-wrapper {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .sort-list-ul-wrapper:last-of-type {
   width: 34px;
   justify-content: space-between;
   margin-left: auto;
-}
-
-.sort-list-ul-wrapper:nth-of-type(1) {
-  justify-content: space-between;
-  width: 238px;
 }
 
 .sort-current {

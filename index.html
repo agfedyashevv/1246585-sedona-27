@@ -114,7 +114,7 @@
             Укажите предполагаемые даты поездки,<br />и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
           <a href="#" class="button button-find">Поиск гостиницы в Седоне</a>
-          <div class="interest-form-wrap">
+          <div class="interest-form-wrap interest-hide">
             <form class="interest-form" action="https://echo.htmlacademy.ru" method="post">
               <p class="interest-item interest-date">
                 <label for="search-arrival-date">Дата заезда:</label>
@@ -207,35 +207,6 @@
     <script>
     var buttonFind = document.querySelector(".button-find");
     var popup = document.querySelector(".interest-form-wrap");
-    // var form = popup.querySelector("form");
-  //   var arrivalDate = popup.querySelector("[name=arrival-date]");
-  //   var dateOfDeparture = popup.querySelector("[name=date-of-departure]");
-  //   var adult = popup.querySelector("[name=adult]");
-  //   var isStorageSupport = true;
-  //   var storage = "";
-  //
-    buttonFind.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.toggle("interest-show");
-  //     if (storage) {
-  //       arrivalDate.value = storage;
-  //       dateOfDeparture.focus();
-  //     } else {
-  //       arrivalDate.focus();
-      // }
-    });
-  //
-  //   form.addEventListener("submit", function (evt) {
-  //     if (!arrivalDate.value || !dateOfDeparture.value || !adult.value) {
-  //       evt.preventDefault();
-  //       console.log("Нужно заполнить поля формы");
-  //     }
-  //   });
-  // </script>
-
-  <!-- <script>
-    var buttonFind = document.querySelector(".button-find");
-    var popup = document.querySelector(".interest-form-wrap");
     var form = popup.querySelector("form");
     var arrivalDate = popup.querySelector("[name=arrival-date]");
     var dateOfDeparture = popup.querySelector("[name=date-of-departure]");
@@ -243,9 +214,17 @@
     var isStorageSupport = true;
     var storage = "";
 
+    try {
+      storage = localStorage.getItem("arrivalDate");
+    } catch (err) {
+      isStorageSupport = false;
+    }
+
     buttonFind.addEventListener("click", function (evt) {
       evt.preventDefault();
-      popup.classList.toggle("interest-close");
+      popup.classList.remove("form-error");
+      popup.classList.toggle("interest-hide");
+
       if (storage) {
         arrivalDate.value = storage;
         dateOfDeparture.focus();
@@ -255,11 +234,18 @@
     });
 
     form.addEventListener("submit", function (evt) {
-      if (!arrivalDate.value || !dateOfDeparture.value || !adult.value) {
+      if (!arrivalDate.value || !dateOfDeparture.value) {
         evt.preventDefault();
         console.log("Нужно заполнить поля формы");
+        popup.classList.remove("form-error");
+        popup.offsetWidth = popup.offsetWidth;
+        popup.classList.add("form-error");
+      } else {
+        if (isStorageSupport) {
+          localStorage.setItem("arrivalDate", arrivalDate.value);
+        }
       }
     });
-  </script> -->
+  </script>
   </body>
 </html>
