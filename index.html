@@ -204,7 +204,36 @@
       </footer>
     </div>
 
-    <!-- <script>
+    <script>
+    var buttonFind = document.querySelector(".button-find");
+    var popup = document.querySelector(".interest-form-wrap");
+    // var form = popup.querySelector("form");
+  //   var arrivalDate = popup.querySelector("[name=arrival-date]");
+  //   var dateOfDeparture = popup.querySelector("[name=date-of-departure]");
+  //   var adult = popup.querySelector("[name=adult]");
+  //   var isStorageSupport = true;
+  //   var storage = "";
+  //
+    buttonFind.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.toggle("interest-show");
+  //     if (storage) {
+  //       arrivalDate.value = storage;
+  //       dateOfDeparture.focus();
+  //     } else {
+  //       arrivalDate.focus();
+      // }
+    });
+  //
+  //   form.addEventListener("submit", function (evt) {
+  //     if (!arrivalDate.value || !dateOfDeparture.value || !adult.value) {
+  //       evt.preventDefault();
+  //       console.log("Нужно заполнить поля формы");
+  //     }
+  //   });
+  // </script>
+
+  <!-- <script>
     var buttonFind = document.querySelector(".button-find");
     var popup = document.querySelector(".interest-form-wrap");
     var form = popup.querySelector("form");

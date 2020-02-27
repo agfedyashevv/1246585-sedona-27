@@ -302,16 +302,16 @@ html {
 }
 
 .interest-form-wrap {
+    display: none;
+}
+
+.interest-show {
   position: absolute;
   display: flex;
   width: 568px;
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-}
-
-.interest-close {
-  display: block;
 }
 
 .interest strong {
