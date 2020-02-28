@@ -513,8 +513,9 @@ html {
   width: 346px;
 }
 
-.interest-date input[type="text"]::placeholder {
-  color: #000000;
+.interest input[type="text"]:focus::placeholder {
+  opacity: 0;
+  transition: opacity 0.2s ease;
 }
 
 .interest input {
