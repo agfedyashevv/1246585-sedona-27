@@ -809,7 +809,8 @@ input[type='number'] {
   left: -6px;
 }
 
-.button-view:hover {
+.button-view:hover,
+.button-view:focus {
   color: #000000;
   background-color: #ffffff;
 }
