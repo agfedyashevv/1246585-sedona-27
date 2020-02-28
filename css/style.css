@@ -307,6 +307,8 @@ html {
   width: 568px;
   top: 100%;
   margin: 0 auto;
+  animation: bounce 0.5s;
+  z-index: 2;
 }
 
 .interest-hide {
@@ -340,6 +342,24 @@ html {
       -webkit-transform: translateX(10px);
               transform: translateX(10px);
     }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-100px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .interest strong {
@@ -493,8 +513,8 @@ html {
   width: 346px;
 }
 
-.interest-date input::placeholder {
-  color: inherit;
+.interest-date input[type="text"]::placeholder {
+  color: #000000;
 }
 
 .interest input {
@@ -572,6 +592,7 @@ html {
   line-height: 26px;
   width: 568px;
   padding: 29px 13px 32px;
+  z-index: 3;
 }
 
 .button-search {
