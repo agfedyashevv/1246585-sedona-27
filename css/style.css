@@ -346,7 +346,7 @@ html {
 
 @keyframes bounce {
   0% {
-    transform: translateY(-100px);
+    transform: translateY(-90px);
   }
 
   70% {
@@ -1273,23 +1273,3 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
   display: flex;
   flex-wrap: wrap;
 }
-
-/* ----- подсветка блоков ----- */
-
-/* div,
-fieldset {
-  box-shadow: 0 0 0 1px green;
-}
-
-section,
-li,
-span,
-button {
-  outline: 1px solid red;
-}
-
-p,
-ul,
-a {
-  outline: 1px solid blue;
-} */
