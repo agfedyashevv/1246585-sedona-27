@@ -10,10 +10,6 @@ body {
   background-color: #f2f2f2;
 }
 
-img {
-  max-width: 100%;
-}
-
 a {
   text-decoration: none;
 }
@@ -167,8 +163,9 @@ html {
 }
 
 .feature-diablo {
-  position: absolute;
-  right: 0;
+  position: relative;
+  display: block;
+  margin-left: auto;
   padding-top: 46px;
   padding-bottom: 60px;
   padding-left: 48px;
@@ -985,11 +982,11 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
 }
 
 .hotel-information-block {
   margin-right: auto;
+  height: 100%;
 }
 
 .hotel-information {
@@ -1014,7 +1011,6 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 }
 
 .hotels-picture {
-  display: flex;
   margin-right: 30px;
   background-color: #f2f2f2;
 }
@@ -1076,6 +1072,7 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 
 .hotel-rating {
   align-items: flex-end;
+  height: 100%;
 }
 
 .rating-value {
