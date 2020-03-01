@@ -754,6 +754,7 @@ input::-webkit-inner-spin-button {
   font: inherit;
   background: none;
   border: none;
+  line-height: 100%;
 }
 
 .range-controls {
