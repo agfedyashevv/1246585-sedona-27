@@ -728,6 +728,13 @@ html {
 
 input[type='number'] {
   -webkit-appearance: textfield;
+          appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+            appearance: none;
 }
 
 .price-controls .min-price {
@@ -905,6 +912,14 @@ input[type='number'] {
   user-select: none;
 }
 
+input[type="checkbox"]:checked:focus + label::before,
+input[type="checkbox"]:not(:checked):focus + label::before,
+input[type="checkbox"]:checked:disabled + label::before,
+input[type="checkbox"]:not(:checked):disabled + label::before {
+  outline-offset: 2px;
+  outline: 2px solid #81b3d2;
+}
+
 input[type="checkbox"]:checked + label::before {
   background: url("../img/checkbox-on.svg") no-repeat;
   content: "";
@@ -923,7 +938,7 @@ input[type="checkbox"]:not(:checked) + label::before {
   top: 50%;
   transform: translate(0, -50%);
   left: -40px;
-  width: 27px;
+  width: 23px;
   height: 23px;
 }
 
@@ -1016,7 +1031,6 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 }
 
 .button-detail {
-  display: inline-block;
   background-color: #81b3d2;
   font-size: 14px;
   line-height: 21px;
@@ -1024,7 +1038,6 @@ input[type="checkbox"]:not(:checked):disabled + label::before {
 }
 
 .button-reservation {
-  display: inline-block;
   background-color: #766357;
   font-size: 14px;
   line-height: 21px;
